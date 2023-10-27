@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../assets/img/infamous-second-son-listing-thumb-03-ps4-us.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dcontainer li{
+    text-align: left;
+}
+
+.dcontainer ul{
+    padding: auto;
+}
+
+.custom-navbar {
+    width: 80%; /* Ancho del navbar al 80% de la página */
+    margin: 0 auto; /* Centra el navbar horizontalmente */
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.custom-navbar .navbar-nav .nav-item .nav-link {
+    font-size: 20px; /* Ajusta el tamaño de fuente según tu preferencia */
+}
+
+main{
+    padding: 30px;
+}
+
+.mPersonajes img{
+    margin-left: 2vw;
+    margin-top: 3vh;
+}
+
+.mPoderes img{
+    margin-left: 2vw;
+    margin-top: 3vh;
+}
+
+
+.mPersonajes , .mMapa , .mContacto, .mPoderes, .mIndex {
+    background-color: rgba(0, 0, 0, 0.95);
+    margin: auto;
+    width: 88%;
+    height: auto;
+}
+
+.mPersonajes p, .mMapa p, .mPoderes p, .mIndex p {
+    margin: auto;
+    width: 90%;
+    margin-top: 2vh;
+}
+
+.mPersonajes img{
+    width: 13%;
+    height: 23%;
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+
+.mMapa img{
+    margin-left: 8vw;
+    margin-top: 2vh;
+}
+
+.mMapa li{
+    color: yellow;
+    list-style: none;
+
+}
+
+.mMapa ul{
+    margin: auto;
+    width: 90%;
+}
+
+.mMapa h2, h3{
+    margin-left: 2vw;
+    margin-top: 3vh;
+}
+
+#img_poder{
+    width: 30%;
+    height: 50%;
+}
+
+
+p, h1, h2, h3, h5{
+    color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*class formulario*/
+
+#email, #nombre{
+    width: 40%;
+}
+
+label{
+    color: yellow;
+}
+
+.consulta{
+    height: 20vh;
+    width: 20vw;
+
+}
+#areainput{
+    margin-top: 2vh;
+    width: 20vw;
+    height: 10vh;
+
+}
+
+.row {
+    width: 100%;
+    justify-self: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+
+}
+
+/* Estilos para el contenedor del footer */
+.fcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilos para los elementos internos del footer */
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-item {
+    margin: 0 10px;
+}
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/* Estilos para las imágenes */
+.footer-item img {
+    max-width: 50px; /* Ajusta el ancho deseado de las imágenes */
+    height: auto;
+}
