@@ -1,0 +1,54 @@
+main{
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.95);
+    margin:map-get($estilo , margen );
+    width: 88%;
+    height: auto;
+}
+
+.mPersonajes img, .mpoderes img{
+    margin-left: $tamanio-2vw;
+    margin-top: map-get($estilo , margen-top );
+}
+
+p{
+    margin:map-get($estilo , margen );
+    width: 90%;
+    margin-top: $tamanio-2vh;
+}
+
+.mPersonajes img{
+    width: 13%;
+    height: 23%;
+    margin-left: $tamanio-2vw;
+    margin-top: $tamanio-2vh;
+}
+
+.mMapa img{
+    margin-left: 8vw;
+    margin-top: $tamanio-2vh;
+}
+
+
+
+.mMapa ul{
+    margin:map-get($estilo , margen );
+    width: 90%;
+
+    li{
+        color: $color-texto;
+        list-style: none;
+    
+    }
+}
+
+#img_poder{
+    width: 30%;
+    height: 50%;
+}
+
+
+p, h1, h2, h3, h5{
+    color: $color-texto;
+    font-family: 'Times New Roman', Times, serif;
+}

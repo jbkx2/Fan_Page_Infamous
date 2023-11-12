@@ -1,0 +1,29 @@
+form{
+
+    label{
+        color: $color-texto;
+    }
+    
+    .consulta{
+        height: 20vh;
+        width: 20vw;
+    
+    }
+    #areainput{
+        margin-top: $tamanio-2vh;
+        width: 20vw;
+        height: 10vh;
+    
+    }
+    
+    
+
+    #email, #nombre{
+        width: 40%;
+    }
+    
+
+}
+
+
+

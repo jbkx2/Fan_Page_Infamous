@@ -1,0 +1,32 @@
+/* Estilos para el contenedor del footer */
+
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+
+    .fcontainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    /* Estilos para los elementos internos del footer */
+    .footer-content {
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer-item {
+        margin: 0 10px;
+    }
+
+    /* Estilos para las imágenes */
+    .footer-item img {
+        max-width: 50px; /* Ajusta el ancho deseado de las imágenes */
+        height: auto;
+    }
+
+}
