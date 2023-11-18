@@ -13,23 +13,35 @@
             width: 90%;
         }
     }
-} 
 
-
-/* Estilo para Distritos en mapa.html */
-
-.dcontainer {
-    li{
-        text-align: left;
-        ul{
-            padding: map-get($estilo , relleno );
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
         }
     }
-    .row {
-        width: 100%;
     
-        @include flexbox(row, flex-start, center);
-    
+    .animated-image {
+        animation: fadeIn 1s ease-in-out; /* Aplica la animación durante 1 segundo con un efecto ease-in-out */
+    }
+
+    /* Estilo para Distritos en mapa.html */
+
+
+    .dcontainer {
+        li{
+            text-align: left;
+            ul{
+                padding: map-get($estilo , relleno );
+            }
+        }
+        .row {
+            width: 100%;
+        
+            @include flexbox(row, flex-start, center);
+        
+        }
     }
 } 
-

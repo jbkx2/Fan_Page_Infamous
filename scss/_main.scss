@@ -1,4 +1,4 @@
-main{
+main {
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.95);
     margin:map-get($estilo , margen );
@@ -18,15 +18,15 @@ main{
 
 }
 
+
 .mPoderes {
-    padding: 20px;
+    // padding: 20px;
     .card {
         background-color: black;
         border: 1px solid #555;
         border-radius: 8px;
         margin-bottom: 20px;
     }
-    
     
     .card img {
         max-width: 30%;
@@ -45,7 +45,7 @@ main{
 
 
 .mPersonajes {
-    img{
+    img {
         width: 13%;
         height: 23%;
         margin-left: $tamanio-2vw;
@@ -55,7 +55,18 @@ main{
     padding: 20px;
 
     .media {
+        display: flex;
+        flex-direction: row;
         margin-bottom: 20px;    
+    }
+
+    @media (max-width: 800px) {
+        .media {
+            flex-direction: column;
+        }
+        h2 {
+            margin-left: 2vw;
+        }
     }
 
     .personaje-img {
@@ -69,3 +80,9 @@ main{
         display: inline-block;
     }
 }
+
+
+.mContacto {
+    min-height: 80vh;
+}
+

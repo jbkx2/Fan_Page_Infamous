@@ -1,14 +1,26 @@
 header{
     .custom-navbar {
-        width: 90%; /* Ancho del navbar al 80% de la página */
+        width: 90%; /* Ancho del navbar al 90% de la página */
         margin: 0 auto; /* Centra el navbar horizontalmente */
         margin-top: 5px;
         margin-bottom: 10px;
+
     }
 
     .custom-navbar .navbar-nav .nav-item .nav-link {
-        font-size: 20px; /* Ajusta el tamaño de fuente según tu preferencia */
+        font-size: 20px; 
     }
-}
 
+    nav a {
+        text-decoration: none;
+        color: #333; /* Color del texto normal */
+        padding: 5px 10px;
+        border: 1px solid transparent; /* Añade un borde transparente al enlace */
+        transition: border-color 0.3s, color 0.3s; /* Agrega una transición suave al color del borde y al color del texto */
+    }
     
+    nav a:hover {
+        border-color: #000; /* Cambia el color del borde al hacer hover */
+    }
+
+}
