@@ -1,0 +1,23 @@
+.mContacto {
+    padding: 20px 0;
+
+    label{
+        color: $color-texto;
+    }
+    
+    .formulario {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+      /* Ajuste de tamaño de input para dispositivos móviles */
+    @media (max-width: 767px) {
+        .formulario input[type="text"],
+        .formulario input[type="email"],
+        .formulario textarea {
+            height: 50px; 
+            font-size: 16px; 
+        }
+        
+    }   
+}

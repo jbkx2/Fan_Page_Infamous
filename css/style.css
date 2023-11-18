@@ -1,157 +1,155 @@
-*{
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+/* mixin para el .row de _mainMapa.scss */
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-image: url(../assets/img/infamous-second-son-listing-thumb-03-ps4-us.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+body {
+  background-image: url(../assets/img/infamous-second-son-listing-thumb-03-ps4-us.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.dcontainer li{
-    text-align: left;
+header .custom-navbar {
+  width: 90%; /* Ancho del navbar al 80% de la página */
+  margin: 0 auto; /* Centra el navbar horizontalmente */
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+header .custom-navbar .navbar-nav .nav-item .nav-link {
+  font-size: 20px; /* Ajusta el tamaño de fuente según tu preferencia */
 }
 
-.dcontainer ul{
-    padding: auto;
+main {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.95);
+  margin: auto;
+  width: 90%;
+  height: 100%;
+}
+main p, main h1, main h2, main h3, main h5 {
+  color: yellow;
+  font-family: "Times New Roman", Times, serif;
+}
+main p {
+  margin: auto;
+  width: 90%;
+  margin-top: 2vh;
 }
 
-.custom-navbar {
-    width: 80%; /* Ancho del navbar al 80% de la página */
-    margin: 0 auto; /* Centra el navbar horizontalmente */
-    margin-top: 5px;
-    margin-bottom: 10px;
+.mPoderes {
+  padding: 20px;
+}
+.mPoderes .card {
+  background-color: black;
+  border: 1px solid #555;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.mPoderes .card img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  margin-top: 2vh;
+  margin-left: 1vw;
 }
 
-.custom-navbar .navbar-nav .nav-item .nav-link {
-    font-size: 20px; /* Ajusta el tamaño de fuente según tu preferencia */
+/* estilo de mPersonajes */
+.mPersonajes {
+  padding: 20px;
+}
+.mPersonajes img {
+  width: 13%;
+  height: 23%;
+  margin-left: 2vw;
+  margin-top: 2vh;
+}
+.mPersonajes .media {
+  margin-bottom: 20px;
+}
+.mPersonajes .personaje-img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+.mPersonajes .media-body {
+  display: inline-block;
 }
 
-main{
-    padding: 30px;
+.mMapa img {
+  margin-left: 8vw;
+  margin-top: 2vh;
+}
+.mMapa li {
+  color: yellow;
+  list-style: none;
+}
+.mMapa li ul {
+  margin: auto;
+  width: 90%;
 }
 
-.mPersonajes img{
-    margin-left: 2vw;
-    margin-top: 3vh;
+/* Estilo para Distritos en mapa.html */
+.dcontainer li {
+  text-align: left;
+}
+.dcontainer li ul {
+  padding: auto;
+}
+.dcontainer .row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-start;
+  justify-content: center;
 }
 
-.mPoderes img{
-    margin-left: 2vw;
-    margin-top: 3vh;
+.mContacto {
+  padding: 20px 0;
+  /* Ajuste de tamaño de input para dispositivos móviles */
 }
-
-
-.mPersonajes , .mMapa , .mContacto, .mPoderes, .mIndex {
-    background-color: rgba(0, 0, 0, 0.95);
-    margin: auto;
-    width: 88%;
-    height: auto;
+.mContacto label {
+  color: yellow;
 }
-
-.mPersonajes p, .mMapa p, .mPoderes p, .mIndex p {
-    margin: auto;
-    width: 90%;
-    margin-top: 2vh;
+.mContacto .formulario {
+  max-width: 600px;
+  margin: 0 auto;
 }
-
-.mPersonajes img{
-    width: 13%;
-    height: 23%;
-    margin-left: 2vw;
-    margin-top: 2vh;
-}
-
-.mMapa img{
-    margin-left: 8vw;
-    margin-top: 2vh;
-}
-
-.mMapa li{
-    color: yellow;
-    list-style: none;
-
-}
-
-.mMapa ul{
-    margin: auto;
-    width: 90%;
-}
-
-.mMapa h2, h3{
-    margin-left: 2vw;
-    margin-top: 3vh;
-}
-
-#img_poder{
-    width: 30%;
-    height: 50%;
-}
-
-
-p, h1, h2, h3, h5{
-    color: yellow;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-/*class formulario*/
-
-#email, #nombre{
-    width: 40%;
-}
-
-label{
-    color: yellow;
-}
-
-.consulta{
-    height: 20vh;
-    width: 20vw;
-
-}
-#areainput{
-    margin-top: 2vh;
-    width: 20vw;
-    height: 10vh;
-
-}
-
-.row {
-    width: 100%;
-    justify-self: flex-start;
-    justify-content: center;
-    flex-direction: row;
-    display: flex;
-
+@media (max-width: 767px) {
+  .mContacto .formulario input[type=text],
+  .mContacto .formulario input[type=email],
+  .mContacto .formulario textarea {
+    height: 50px;
+    font-size: 16px;
+  }
 }
 
 /* Estilos para el contenedor del footer */
-.fcontainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-/* Estilos para los elementos internos del footer */
-.footer-content {
-    display: flex;
-    align-items: center;
-}
-
-.footer-item {
-    margin: 0 10px;
-}
-
 footer {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 10px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  /* Estilos para los elementos internos del footer */
+  /* Estilos para las imágenes */
+}
+footer .fcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+footer .footer-content {
+  display: flex;
+  align-items: center;
+}
+footer .footer-item {
+  margin: 0 10px;
+}
+footer .footer-item img {
+  max-width: 50px; /* Ajusta el ancho deseado de las imágenes */
+  height: auto;
 }
 
-/* Estilos para las imágenes */
-.footer-item img {
-    max-width: 50px; /* Ajusta el ancho deseado de las imágenes */
-    height: auto;
-}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,71 @@
+main{
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.95);
+    margin:map-get($estilo , margen );
+    width: 90%;
+    height: 100%;
+
+    p, h1, h2, h3, h5{
+        color: $color-texto;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    p{
+        margin:map-get($estilo , margen );
+        width: 90%;
+        margin-top: $tamanio-2vh;
+    }
+
+}
+
+.mPoderes {
+    padding: 20px;
+    .card {
+        background-color: black;
+        border: 1px solid #555;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    
+    
+    .card img {
+        max-width: 30%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+        margin-top: 2vh;
+        margin-left: 1vw;
+    }
+}
+
+
+
+
+/* estilo de mPersonajes */
+
+
+
+.mPersonajes {
+    img{
+        width: 13%;
+        height: 23%;
+        margin-left: $tamanio-2vw;
+        margin-top: $tamanio-2vh;
+    }
+
+    padding: 20px;
+
+    .media {
+        margin-bottom: 20px;    
+    }
+
+    .personaje-img {
+        width: 150px;
+        height: auto;
+        border-radius: 8px;
+        margin-right: 20px;
+    }
+
+    .media-body {
+        display: inline-block;
+    }
+}

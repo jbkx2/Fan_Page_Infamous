@@ -1,0 +1,14 @@
+header{
+    .custom-navbar {
+        width: 90%; /* Ancho del navbar al 80% de la página */
+        margin: 0 auto; /* Centra el navbar horizontalmente */
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .custom-navbar .navbar-nav .nav-item .nav-link {
+        font-size: 20px; /* Ajusta el tamaño de fuente según tu preferencia */
+    }
+}
+
+    

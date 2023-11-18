@@ -1,0 +1,9 @@
+/* mixin para el .row de _mainMapa.scss */
+
+@mixin flexbox($direccion, $justifyself, $justifycontent){
+    display: flex;
+    flex-direction: $direccion;
+    justify-self: $justifyself;
+    justify-content: $justifycontent;
+
+}
