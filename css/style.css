@@ -12,7 +12,7 @@ body {
 }
 
 header .custom-navbar {
-  width: 80%; /* Ancho del navbar al 80% de la página */
+  width: 90%; /* Ancho del navbar al 80% de la página */
   margin: 0 auto; /* Centra el navbar horizontalmente */
   margin-top: 5px;
   margin-bottom: 10px;
@@ -25,57 +25,63 @@ main {
   padding: 30px;
   background-color: rgba(0, 0, 0, 0.95);
   margin: auto;
-  width: 88%;
-  height: auto;
+  width: 90%;
+  height: 100%;
 }
-
-.mPersonajes img, .mpoderes img {
-  margin-left: 2vw;
-  margin-top: 3vh;
+main p, main h1, main h2, main h3, main h5 {
+  color: yellow;
+  font-family: "Times New Roman", Times, serif;
 }
-
-p {
+main p {
   margin: auto;
   width: 90%;
   margin-top: 2vh;
 }
 
+.mPoderes {
+  padding: 20px;
+}
+.mPoderes .card {
+  background-color: black;
+  border: 1px solid #555;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.mPoderes .card img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  margin-top: 2vh;
+  margin-left: 1vw;
+}
+
+/* estilo de mPersonajes */
+.mPersonajes {
+  padding: 20px;
+}
 .mPersonajes img {
   width: 13%;
   height: 23%;
   margin-left: 2vw;
   margin-top: 2vh;
 }
-
-.mMapa img {
-  margin-left: 8vw;
-  margin-top: 2vh;
+.mPersonajes .media {
+  margin-bottom: 20px;
 }
-
-.mMapa ul {
-  margin: auto;
-  width: 90%;
+.mPersonajes .personaje-img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
 }
-.mMapa ul li {
-  color: yellow;
-  list-style: none;
-}
-
-#img_poder {
-  width: 30%;
-  height: 50%;
-}
-
-p, h1, h2, h3, h5 {
-  color: yellow;
-  font-family: "Times New Roman", Times, serif;
+.mPersonajes .media-body {
+  display: inline-block;
 }
 
 .mMapa img {
   margin-left: 8vw;
   margin-top: 2vh;
 }
-
 .mMapa li {
   color: yellow;
   list-style: none;
@@ -92,8 +98,7 @@ p, h1, h2, h3, h5 {
 .dcontainer li ul {
   padding: auto;
 }
-
-.row {
+.dcontainer .row {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -101,25 +106,29 @@ p, h1, h2, h3, h5 {
   justify-content: center;
 }
 
-form label {
+.mContacto {
+  padding: 20px 0;
+  /* Ajuste de tamaño de input para dispositivos móviles */
+}
+.mContacto label {
   color: yellow;
 }
-form .consulta {
-  height: 20vh;
-  width: 20vw;
+.mContacto .formulario {
+  max-width: 600px;
+  margin: 0 auto;
 }
-form #areainput {
-  margin-top: 2vh;
-  width: 20vw;
-  height: 10vh;
-}
-form #email, form #nombre {
-  width: 40%;
+@media (max-width: 767px) {
+  .mContacto .formulario input[type=text],
+  .mContacto .formulario input[type=email],
+  .mContacto .formulario textarea {
+    height: 50px;
+    font-size: 16px;
+  }
 }
 
 /* Estilos para el contenedor del footer */
 footer {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   margin-top: 10px;
   /* Estilos para los elementos internos del footer */

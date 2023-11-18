@@ -1,31 +1,35 @@
-.mMapa img{
-    margin-left: 8vw;
-    margin-top: $tamanio-2vh;
-}
-
-.mMapa li{
-    color: $color-texto;
-    list-style: none;
-
-    ul{
-        margin:map-get($estilo , margen );
-        width: 90%;
+.mMapa {
+    img{
+        margin-left: 8vw;
+        margin-top: $tamanio-2vh;
     }
-}
+
+    li{
+        color: $color-texto;
+        list-style: none;
+
+        ul{
+            margin:map-get($estilo , margen );
+            width: 90%;
+        }
+    }
+} 
 
 
 /* Estilo para Distritos en mapa.html */
 
-.dcontainer li{
-    text-align: left;
-    ul{
-        padding: map-get($estilo , relleno );
+.dcontainer {
+    li{
+        text-align: left;
+        ul{
+            padding: map-get($estilo , relleno );
+        }
     }
-}
+    .row {
+        width: 100%;
+    
+        @include flexbox(row, flex-start, center);
+    
+    }
+} 
 
-.row {
-    width: 100%;
-
-    @include flexbox(row, flex-start, center);
-
-}

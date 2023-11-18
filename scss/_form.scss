@@ -1,29 +1,23 @@
-form{
+.mContacto {
+    padding: 20px 0;
 
     label{
         color: $color-texto;
     }
     
-    .consulta{
-        height: 20vh;
-        width: 20vw;
-    
-    }
-    #areainput{
-        margin-top: $tamanio-2vh;
-        width: 20vw;
-        height: 10vh;
-    
+    .formulario {
+        max-width: 600px;
+        margin: 0 auto;
     }
     
-    
-
-    #email, #nombre{
-        width: 40%;
-    }
-    
-
+      /* Ajuste de tamaño de input para dispositivos móviles */
+    @media (max-width: 767px) {
+        .formulario input[type="text"],
+        .formulario input[type="email"],
+        .formulario textarea {
+            height: 50px; 
+            font-size: 16px; 
+        }
+        
+    }   
 }
-
-
-
