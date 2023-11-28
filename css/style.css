@@ -99,9 +99,6 @@ main p {
   min-height: 80vh;
 }
 
-.mMapa {
-  /* Estilo para Distritos en mapa.html */
-}
 .mMapa img {
   margin-left: 8vw;
   margin-top: 2vh;
@@ -182,6 +179,36 @@ footer .footer-item {
 footer .footer-item img {
   max-width: 50px; /* Ajusta el ancho deseado de las imágenes */
   height: auto;
+}
+
+.error-404 {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: none;
+}
+.error-404 .error-container {
+  text-align: center;
+}
+.error-404 h1 {
+  color: #333;
+  font-size: 3em;
+}
+.error-404 p {
+  color: #555;
+  font-size: 1.2em;
+}
+.error-404 a {
+  color: #007BFF;
+  text-decoration: none;
+}
+.error-404 a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
